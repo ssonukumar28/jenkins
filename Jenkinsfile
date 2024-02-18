@@ -5,6 +5,7 @@ pipeline {
         CLUSTER_NAME = 'gkecluster-01'
         LOCATION = 'us-central1-a'
         CREDENTIALS_ID = 'gkecluster-sa'
+        DOCKER_HUB_USERNAME = 'ssonukumar28'
     }
     stages {
         stage("Checkout code") {
@@ -15,7 +16,7 @@ pipeline {
         stage("Build image") {
             steps {
                 script {
-                    myapp = docker.build("ssonukumar28/hello:${env.BUILD_ID}")
+                    myapp = docker.build("${env.DOCKER_HUB_USERNAME}/hello:${env.BUILD_ID}")
                 }
             }
         }
@@ -37,3 +38,4 @@ pipeline {
         }
     }
 }
+
