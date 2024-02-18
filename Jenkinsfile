@@ -5,7 +5,6 @@ pipeline {
         CLUSTER_NAME = 'gkecluster-01'
         LOCATION = 'us-central1-a'
         CREDENTIALS_ID = 'gkecluster-sa'
-	DOCKER-HUB-USERNAME = 'ssonukumar28'
     }
     stages {
         stage("Checkout code") {
