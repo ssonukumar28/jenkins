@@ -4,7 +4,7 @@ pipeline {
         PROJECT_ID = 'gcp-testing-services'
         CLUSTER_NAME = 'gkecluster-01'
         LOCATION = 'us-central1-a'
-        CREDENTIALS_ID = 'gkecluster-sa'
+        CREDENTIALS_ID = 'gkecluster-sa01'
         DOCKER_HUB_USERNAME = 'ssonukumar28'
     }
     stages {
