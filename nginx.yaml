@@ -13,7 +13,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: us-central1-docker.pkg.dev/gcp-testing-services/stg/nginx:latest
+      - name: us-central1-docker.pkg.dev/gcp-testing-services/stg/nginx:32
         image: nginx
         ports:
         - containerPort: 80
